@@ -4,3 +4,5 @@ Moreover, there are trees, a variety of crops, diversity of flowers, and rivers,
 
 Today we are learning git repository.
 I'm happy to being here
+
+I love my village.
