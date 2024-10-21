@@ -8,4 +8,5 @@ sudo yum -y install python36
 sudo hostnamectl set-hostname ansible-master.local
 sudo yum -y repolist
 sudo yum install ansible -y
+sudo yum -y install git
 sudo reboot
