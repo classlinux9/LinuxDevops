@@ -11,6 +11,7 @@ dnf list installed
 cat /etc/os-release
 sudo yum search plot
 sudo dnf search plot
+touch sterly.txt
 dnf info gnuplot
 sudo yum -y install gnuplot
 sudo yum -y install firefox
