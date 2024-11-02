@@ -9,7 +9,7 @@ read Username
 echo "Please enter your password"
 read Password
 
-if [ ${Username} == "Amah" ] && [ ${Password} == "Favour" ]
+if [ ${Username} == "Amah" ] && [ ${Password} == "Favour1981" ]
    then
        echo "Valid user"
 
