@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cd /home/mikezock
-touch nyphone.txt
+cd /home/ivoamah
+touch myphone.txt
