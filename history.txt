@@ -1,0 +1,524 @@
+1  cat /proc/partitions
+    2  lsblk
+    3  df -hT
+    4  mkdir dallas1
+    5  mkdir dallas2
+    6  lsblk
+    7  ls -l
+    8  sudo mkfs.xfs /dev/sdb1 /home/sambassa dallas1
+    9  lsblk
+   10  sudo mkfs.xfs /dev/sdb1 /home/sambassa dallas1
+   11  sudo vi fstab
+   12  sudo mkfs.xfs /dev/sdb1
+   13  vi /etc/fstab
+   14  lsblk
+   15  ls
+   16  vi /etc/fstab
+   17  sudo fdisk /dev/sdb
+   18  sudo mkfs.xfs /dev/sdb6
+   19  sudo partprobe /dev/sdb6
+   20  sudo mkfs.xfs /dev/sdb6
+   21  vi /etc/fstab
+   22  vi game2.sh
+   23  lsblk
+   24  sudo partprobe /dev/sdb6
+   25  lsblk
+   26  ip address | more
+   27  pyton --version
+   28  pyton -version
+   29  sudo pyton -version
+   30  sudo pyton --version
+   31  sudo python -version
+   32  sudo python --version
+   33  bw --
+   34  rpm -qa | grep python
+   35  sudo yum install python client
+   36  sudo yum search python
+   37  sudo yum install python*
+   38  sudo yum install python* --skip-broken -y
+   39  sudo yum update -y
+   40  sudo python --version
+   41  sudo python -version
+   42  python -v
+   43  python3 -v
+   44  sudo yum update -y
+   45  sudo reboot
+   46  sudo yum install python* --skip-broken -y
+   47  sudo yum install python36 -y
+   48  python --version
+   49  python3 --version
+   50  sudo hostnamectl set.
+   51  sudo hostnamectl set-hostname ansible-master.local
+   52  exit
+   53  sudo yum install epel-release -y
+   54  yum install python36
+   55  sudo yum install python36
+   56  python3 --version
+   57  hostname
+   58  sudo vi /etc/hosts
+   59  free
+   60  ls -l
+   61  su -
+   62  yum repolist all
+   63  sudo yum install ansible -y
+   64  ansible -version
+   65  ansible --version
+   66  ls -al
+   67  ssh-keygen
+   68  cd .ssh
+   69  ls
+   70  cat id_rsa
+   71  cat id_rsa.pub
+   72  ls
+   73  ping ansible-client1
+   74  ping ansible-client2
+   75  ssh ansible-client1
+   76  ssh-copy-id sambassa@ansible-client1
+   77  ssh-copy-id sambassa@ansible-client1.local
+   78  ssh-copy-id sambassa@ansible-client2.local
+   79  vi /etc/hosts
+   80  cd /etc/ansible
+   81  ls
+   82  sudo vi ansible.cfd
+   83  exit
+   84  systemctl restart
+   85  systemctl restarts
+   86  reboot
+   87  ls
+   88  free
+   89  tree
+   90  sudo vi copy.sh
+   91  ./copy.sh
+   92  sudo ./copy.sh
+   93  chmod +x copy.sh
+   94  chmod +x extension.txt
+   95  sudo chmod +x extension.txt
+   96  sudo vi copy.sh
+   97  chmod +x copy.sh
+   98  ./copy.sh
+   99  pwd
+  100  chmod +x copy.sh
+  101  ls
+  102  id
+  103  cat copy.sh
+  104  ls
+  105  chmod +x copy.sh
+  106  ls -l copy.sh
+  107  sudo chmod 775 copy.sh
+  108  ls -l copy.sh
+  109  ./copy.sh
+  110  sudo vi copy.sh
+  111  ./copy.sh
+  112  sudo vi copy.sh
+  113  ./copy.sh
+  114  sudo vi copy.sh
+  115  ./copy.sh
+  116  cat copy.sh
+  117  sudo vi copy.sh
+  118  ./copy.sh
+  119  sudo vi copy.sh
+  120  ./copy.sh
+  121  vi ./copy.sh
+  122  ./copy.sh
+  123  vi ./copy.sh
+  124  ./copy.sh
+  125  vi ./copy.sh
+  126  ./copy.sh
+  127  vi ./copy.sh
+  128  ./copy.sh
+  129  pwd
+  130  ls
+  131  ip address
+  132  reboot
+  133  ./copy.sh
+  134  vi ./copy.sh
+  135  ./copy.sh
+  136  nmtui
+  137  su -
+  138  nmtui
+  139  vi ./copy.sh
+  140  ./copy.sh
+  141  vi ./copy.sh
+  142  ./copy.sh
+  143  vi ./copy.sh
+  144  ./copy.sh
+  145  cat copy.sh
+  146  vi ./copy.sh
+  147  ./copy.sh
+  148  cat /etc/hosts
+  149  sudo nmtui
+  150  sudo systemctl restart NetworkManager
+  151  sudo systemctl status NetworkManager
+  152  cat /etc/hosts
+  153  cat inventory
+  154  ansible all -i inventory -m ping
+  155  ansible --version
+  156  ansible-invetory all -i inventory --list
+  157  sudo ansible-invetory all -i inventory --list
+  158  ansible-inventory all -i inventory --list
+  159  ansible all -i inventory -m command "yum install elink -y"
+  160  ansible all -i inventory -m command "yum install httpd -y"
+  161  ansible all -i inventory -m yum -a "name=telnet state=latest"
+  162  sudo ansible all -i inventory -m yum -a "name=telnet state=latest"
+  163  cd /etc/ansible
+  164  ls
+  165  sudo vi ansible.cfd
+  166  sudo vi ansible.cfg
+  167  sudo ansible all -i inventory -m yum -a "name=telnet state=latest"
+  168  sudo ansible all -i /home/sambassa/inventory -m yum -a "name=telnet state=latest"
+  169  ansible all -i /home/sambassa/inventory -m ping
+  170  ansible all -i /home/sambassa/inventory -m command -a "uptime"
+  171  ansible all -i /home/sambassa/inventory -m command -a "rpm -qa|grep elinks"
+  172  ansible all -i /home/sambassa/inventory -m shell -a "rpm -qa|grep elinks"
+  173  ansible all -i /home/sambassa/inventory -m shell -a "yum remove elinks -y"
+  174  ansible all -i /home/sambassa/inventory -m shell -a "rpm -qa|grep elinks"
+  175  ansible all -i /home/sambassa/inventory -m shell -a "yum install elinks -y"
+  176  ansible all -i /home/sambassa/inventory -m shell -a "rpm -qa|grep elinks"
+  177  ansible all -i /home/sambassa/inventory -m yum -a "name=httpd state=latest"
+  178  ansible all -i /home/sambassa/inventory -m shell -a "rpm -qa|grep httpd"
+  179  ansible all -i /home/sambassa/inventory -m yum -a "name=telnet state=latest"
+  180  ansible all -i /home/sambassa/inventory -m shell -a "rpm -qa|grep telnet"
+  181  pwd
+  182  cd ~
+  183  pwd
+  184  ls -l
+  185  cat /etc/group
+  186  chown sammydir sambassa sambassa
+  187  chown sambassa sambassa sammydir
+  188  sudo chown sambassa sambassa sammydir
+  189  ls -l
+  190  sudo chown sambassa sambassa sammydir
+  191  sudo chown sambassa:sambassa sammydir
+  192  ls -l
+  193  cat /etc/passwd
+  194  sudo useradd fredo -u 601 -g 600 -c "fredo Baggins -m -d /home/sambassa/fredo -s /bin/bash fredo
+  195  sudo id fredo
+  196  sudo useradd fredo -u 601 -g 600 -c "fredo Baggins -m -d /home/sambassa/fredo
+  197  sudo useradd fredo -u 601 -g 600 -c "fredo Baggins
+  198  sudo useradd fredo
+  199  id fredo
+  200  sudo useradd gollum
+  201  sudo useradd samwise
+  202  sudo useradd legolas
+  203  sudo useradd gimli
+  204  cat /etc/passwd
+  205  usermod -u 601 -g 600 fredo
+  206  sudo usermod -u 601 -g 600 fredo
+  207  sudo usermod -u 602 -g 600 gollum
+  208  sudo usermod -u 603 -g 600 samwise
+  209  sudo usermod -u 701 -g 700 legolas
+  210  sudo usermod -u 801 -g 800 gimli
+  211  cat /etc/passwd
+  212  sudo passwd fredo
+  213  sudo passwd gollum
+  214  sudo passwd samwise
+  215  sudo passwd legolas
+  216  ansible --version
+  217  sudo mkdir ansible_playbook
+  218  cd ansible_playbook/
+  219  ssh-keygen
+  220  ssh-copy-id root@170.187.142.69
+  221  ssh root@170.187.142.69
+  222  ssh root@170.187.142.117
+  223  ssh-copy-id root@170.187.142.69
+  224  ssh-copy-id root@170.187.142.117
+  225  ssh root@170.187.142.117
+  226  ssh-copy-id root@170.187.142.125
+  227  touch inventory
+  228  sudo touch inventory
+  229  vi inventory
+  230  sudo vi inventory
+  231  ansible -b -i inventory all -m ping
+  232  sudo vi inventory
+  233  ansible -b -i inventory all -m ping
+  234  sudo touch playbook.yaml
+  235  sudo vi playbook.yaml
+  236  ansible-playbook -i inventory playbook.yaml
+  237  sudo vi playbook.yaml
+  238  ansible-playbook -i inventory playbook.yaml
+  239  sudo vi playbook.yaml
+  240  ansible-playbook -i inventory playbook.yaml
+  241  ssh root@170.187.142.117
+  242  sudo vi playbook.yaml
+  243  ansible-playbook -i inventory playbook.yaml
+  244  sudo vi playbook.yaml
+  245  ansible-playbook -i inventory playbook.yaml
+  246  sudo vi inventory
+  247  ansible-playbook -i inventory playbook.yaml
+  248  ssh sammy
+  249  ssh ivo
+  250  ssh ivo@170.187.142.117
+  251  ansible-doc -s debug
+  252  ansible-doc -s user
+  253  sudo vi playbook.yaml
+  254  ansible all i inventory -m ping
+  255  sudo ansible all i inventory -m ping
+  256  sudo ansible all -i inventory -m ping
+  257  ansible all -i inventory -m ping
+  258  ansible --version
+  259  rpm -qa | grep telnet
+  260  sudo yum install elinks
+  261  ansible all -i inventory -m command -a "yum install elinks -y"
+  262  ansible all -i inventory -m ping
+  263  ansible all -i inventory -m command -a "yum install elinks -y"
+  264  sudo ansible all -i inventory -m ping
+  265  vi ansible.cfg
+  266  sudo ansible all -i inventory -m ping
+  267  cd /etc/ansible
+  268  ls
+  269  sudo vi ansible.cfg
+  270  sudo ansible all -i inventory -m ping
+  271  ansible all -i inventory -m ping
+  272  ansible all -i /home/sambassa/inventory -m ping
+  273  logout
+  274  ls
+  275  ls -l
+  276  sudo chown ansible_playbook sambassa:sambassa
+  277  sudo chown sambassa:sambassa ansible_playbook
+  278  ls -l
+  279  ansible all -i /home/sambassa/inventory -m ping
+  280  sudo ansible all -i inventory -m ping
+  281  ansible all -i  /home/sambassa/inventory -m ping
+  282  ansible all -i  /home/sambassa/inventory -m command -a "uptime"
+  283  ansible all -i  /home/sambassa/inventory -m command -a "rpm -qa | gep elinks"
+  284  ansible all -i  /home/sambassa/inventory -m shell -a "rpm -qa | gep elinks"
+  285  ansible all -i  /home/sambassa/inventory -m yum -a "name=httpd state=latest"
+  286  cd /etc/ansible.cfg
+  287  cd /etc/ansible
+  288  ansible all -i  /home/sambassa/inventory -m yum -a "name=httpd state=latest"
+  289  ansible all -i /home/sambassa/inventory -m ping
+  290  ansible all -i inventory -m ping
+  291  ansible all -i inventory -m command -a "yum update -y"
+  292  ansible --version
+  293  ping 192.168.1.133
+  294  ssh client1@192.168.1.193
+  295  ls -l
+  296  cd /etc/ansible_playbook
+  297  cd ansible_playbook/
+  298  ssh client@192.168.1.193
+  299  cd ~
+  300  pwd
+  301  ssh keygen
+  302  ansible -b -i inventory all -m ping
+  303  ssh client@192.168.1.193
+  304  ssh-keygen
+  305  ssh client1@192.168.1.193
+  306  ssh sambassa@ansible-client1.local
+  307  ssh sambassa@ansible-client2.local
+  308  ansible -b -i inventory all -m ping
+  309  ssh-copy-id sambassa@ansible-client1.local
+  310  ssh-copy-id sambassa@ansible-client2.local
+  311  ansible -b -i inventory all -m ping
+  312  sudo touch playbook.yaml
+  313  vi playbook.yaml
+  314  sudo vi playbook.yaml
+  315  ansible-playbook -i inventory playbook.yaml
+  316  sudo vi playbook.yaml
+  317  ansible-playbook -i inventory playbook.yaml
+  318  ls -l
+  319  sudo chown sambassa:sambassa playbook.yaml
+  320  ls -l
+  321  ansible all -i inventory -m ping
+  322  ansible all -i inventory -m command -a "free -h"
+  323  ansible all -i inventory -m command -a "uptime"
+  324  ansible-doc
+  325  sudo ansible-doc
+  326  sudo ansible -doc
+  327  ansible -doc
+  328  ansible-doc yum
+  329  sudo ansible -docaqana
+  330  reboot
+  331  sudo ansible-doc yum
+  332  ansible all -i inventory -m ping
+  333  ansible-doc yum
+  334  ansible all -i inventory -m ping
+  335  ansible all -i inventory -m command -a "free -h"
+  336  ansible all -i inventory -m command -a "uptime"
+  337  vi playbook-yaml
+  338  sudo vi playbook-yaml
+  339  ansible-doc services
+  340  ansible-doc service
+  341  sudo vi playbook-yaml
+  342  cat playbook-yaml
+  343  sudo vi playbook-yaml
+  344  ansible-plabook -i inventory playbook-yaml --syntax-check
+  345  ansible-playbook -i inventory playbook-yaml --syntax-check
+  346  sudo vi playbook-yaml
+  347  ansible-playbook -i inventory playbook-yaml --syntax-check
+  348  ansible-playbook -i inventory playbook-yaml -c
+  349  ansible-playbook -i inventory playbook-yaml --syntax-check
+  350  ansible all -i inventory -m ping
+  351  sudo vi playbook-yaml
+  352  sudo vi playbook.yaml
+  353  ansible-playbook -i inventory playbook-yaml --syntax-check
+  354  ansible-playbook -i inventory playbook.yaml --syntax-check
+  355  sudo vi playbook.yaml
+  356  ansible-playbook -i inventory playbook.yaml --syntax-check
+  357  sudo vi playbook.yaml
+  358  ansible-playbook -i inventory playbook.yaml --syntax-check
+  359  sudo vi playbook.yaml
+  360  ansible-playbook -i inventory playbook.yaml --syntax-check
+  361  sudo vi playbook.yaml
+  362  ansible-playbook -i inventory playbook.yaml --syntax-check
+  363  sudo vi playbook.yaml
+  364  ansible-playbook -i inventory playbook.yaml --syntax-check
+  365  ansible-playbook -i inventory playbook.yaml -c
+  366  sudo vi playbook.yaml
+  367  ansible-playbook -i inventory playbook.yaml -c
+  368  sudo vi playbook.yaml
+  369  ansible-playbook -i inventory -b playbook.yaml -c
+  370  ansible-playbook -i inventory playbook.yaml --syntax-check
+  371  sudo ansible-playbook -i inventory playbook.yaml --syntax-check
+  372  sudo ansible-playbook -i inventory -b playbook.yaml -c
+  373  ansible-doc -t become -l
+  374  sudo ansible-playbook -i inventory -t playbook.yaml -c
+  375  sudo ansible-playbook -i inventory  playbook.yaml
+  376  sodo touch inventory.txt
+  377  sudo touch inventory.txt
+  378  sudo vi inventory
+  379  ssh sambassa@192.168.1.193
+  380  ssh sambassa@192.168.1.62
+  381  ansible all -i inventory -m ping
+  382  ssh-copy-id
+  383  ssh-copy-id sambassa@192.168.1.193
+  384  sudo vi inventory
+  385  ansible all -i inventory -m ping
+  386  ssh sambassa@192.168.1.133
+  387  ansible all -i inventory -m ping
+  388  sudo vi inventory
+  389  ansible all -i inventory -m ping
+  390  sudo vi inventory
+  391  ssh-copy-id sambassa@192.168.1.133
+  392  ansible all -i inventory -m ping
+  393  ansible all -i inventory -m command -a "uptime"
+  394  ansible all -i inventory -m command -a "free -h"
+  395  sudo vi playbook.yaml
+  396  ansible-playbook -i inventory playbook.yaml
+  397  sudo vi playbook.yaml
+  398  ansible-playbook -i inventory playbook.yaml -c
+  399  ansible-playbook -i inventory playbook.yaml
+  400  sudo vi playbook.yaml
+  401  cat /etc/redhat-release
+  402  uname
+  403  uname -a
+  404  sudo vi playbook.yaml
+  405  ansible-playbook -i inventory playbook.yaml
+  406  sudo vi inventory
+  407  ansible-playbook -i inventory playbook.yaml
+  408  sudo vi inventory
+  409  sudo vi playbook.yaml
+  410  ansible-playbook -i inventory playbook.yaml
+  411  sudo vi playbook.yaml
+  412  ansible-playbook -i inventory playbook.yaml
+  413  sudo vi playbook.yaml
+  414  ansible-playbook -i inventory playbook.yaml
+  415  sudo vi playbook.yaml
+  416  ansible-playbook -i inventory playbook.yaml
+  417  sudo vi playbook.yaml
+  418  ansible-playbook -i inventory playbook.yaml
+  419  sudo vi playbook.yaml
+  420  ansible-playbook -i inventory playbook.yaml
+  421  ansible-doc httpd
+  422  sudo vi inventory
+  423  ansible-playbook -i inventory playbook.yaml -c
+  424  ansible-playbook -i inventory playbook.yaml
+  425  sudo vi inventory
+  426  ansible-playbook -i inventory playbook.yaml
+  427  sudo vi inventory
+  428  ansible-playbook -i inventory playbook.yaml
+  429  sudo vi playbook.yaml
+  430  ansible-playbook -i inventory playbook.yaml
+  431  sudo vi playbook.yaml
+  432  ansible-playbook -i inventory playbook.yaml
+  433  sudo vi inventory
+  434  ansible-playbook -i inventory playbook.yaml
+  435  sudo vi inventory
+  436  ansible-playbook -i inventory playbook.yaml
+  437  ansible-playbook -i inventory playbook.yaml -c
+  438  ansible-playbook -i inventory playbook.yaml
+  439  sudo vi playbook.yaml
+  440  sudo yum install git -y
+  441  git --version
+  442  eg. git config --global user.name "samuelambassa"
+  443  eg. git config --global user.name "Samuel Ambassa"
+  444  git config --global user.name "Samuel Ambassa"
+  445  git config --global user.email "samuelambassa@gmail.com"
+  446  git config --global color.ui auto
+  447  ls
+  448  ansible --help
+  449  sudo ansible-playbook -i inventory -b playbook.yaml -c
+  450  ansible-playbook -i inventory playbook.yaml -c
+  451  sudo vi playbook.yaml
+  452  vi playbook.yaml
+  453  sudo vi inventory
+  454  ping ansible-client1
+  455  sudo vi /etc/resolv.conf
+  456  nslookup ansible-client1
+  457  sudo yum install net-tools -y
+  458  nslookup ansible-client1
+  459  sudo yum install nslookup -y
+  460  sudo yum install bind-utils -y
+  461  nslookup ansible-client1
+  462  dig
+  463  ansible-playbook -i inventory playbook.yaml -C
+  464  vi inventory
+  465  sudo vi /etc/hosts
+  466  ansible-playbook -i inventory playbook.yaml -C
+  467  sudo vi /etc/hosts
+  468  vi inventory
+  469  ping ansible-client2
+  470  ssh-copy-id ansible-client2
+  471  ssh-copy-id ansible-client2 -f
+  472  ssh ansible-client2
+  473  ansible-playbook -i inventory playbook.yaml -C
+  474  ansible-playbook -i inventory  playbook.yaml
+  475  git clone https://github.com/classlinux9/LinuxDevops.git
+  476  cd LinuxDevops/
+  477  ls
+  478  git add /home/sambassa/playbook.yaml
+  479  cp /home/sambassa/playbook.yaml .
+  480  git add playbook.yaml
+  481  git commit -a -m "this is first playbook run"
+  482  git push origin main
+  483  git status
+  484  git branch sammyboston
+  485  git branch -l
+  486  git status
+  487  git check out sammyboston
+  488  git checkout sammyboston
+  489  git status
+  490  ls -l
+  491  ls ~
+  492  cp ~/calculator.sh .
+  493  git add calculator.sh
+  494  git commit -a -m "my first branch in Devops"
+  495  git push orign sammyboston
+  496  git push origin sammyboston
+  497  date
+  498  date -s "2024-10-24 $"
+  499  main date
+  500  man date
+  501  sudo date -s 2024-10-26
+  502  date
+  503  cp ~/inventory
+  504  cp ~/inventory .
+  505  git add inventory
+  506  git commit -a -m "my inventoy file"
+  507  git push origin sammyboston
+  508  ansible-playbook -i inventory playbook.yaml -C
+  509  ansible-playbook -i inventory playbook.yaml
+  510  ls -l
+  511  history
+  512  ansible all -i inventory -m ping
+  513  sudo yum install traceroute -y
+  514  traceroute google.com
+  515  ansible all -i inventory -m ping
+  516  history
+[sambassa@ansible-master ~]$ touch history.txt
+[sambassa@ansible-master ~]$
+[sambassa@ansible-master ~]$
+[sambassa@ansible-master ~]$ sudo vi hi
+hiring.sh    history.txt
+[sambassa@ansible-master ~]$ sudo vi history.txt
+[sambassa@ansible-master ~]$
+
