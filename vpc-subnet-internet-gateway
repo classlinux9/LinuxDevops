@@ -1,0 +1,26 @@
+In AWS (Amazon Web Services), a Virtual Private Cloud (VPC), Subnet, and Internet Gateway work together to create a secure and customizable network environment for your resources:
+
+### 1. **Virtual Private Cloud (VPC)**
+   - A VPC is a virtual network that closely resembles a traditional network that you'd operate in your own data center.
+   - It allows you to define your network topology, IP address ranges, subnets, and routing.
+   - Each VPC is isolated from other VPCs and allows you to manage network access and security, including firewalls and route tables.
+
+### 2. **Subnet**
+   - A subnet is a segment within a VPC where you can group resources based on security and operational needs.
+   - Each subnet resides in a single Availability Zone (AZ) and is associated with a specific CIDR block within the VPC’s range.
+   - Subnets can be:
+      - **Public Subnets**: Connect to the Internet via an Internet Gateway, allowing public access.
+      - **Private Subnets**: Used for resources that don’t need direct Internet access.
+
+### 3. **Internet Gateway (IGW)**
+   - An Internet Gateway is a horizontally scaled, redundant, and highly available component that allows communication between resources within your VPC and the Internet.
+   - When attached to a VPC, it enables instances in a public subnet to reach the Internet if they have public IPs.
+   - You configure routing to direct traffic to and from the Internet Gateway via route tables associated with public subnets.
+
+### Example Setup
+
+1. **Create a VPC**: Define a CIDR block, e.g., `10.0.0.0/16`.
+2. **Create Subnets**: Split the CIDR range into subnets, e.g., `10.0.1.0/24` for public and `10.0.2.0/24` for private.
+3. **Attach an Internet Gateway**: Attach it to the VPC, and configure route tables so public subnets route to the Internet Gateway, enabling Internet access.
+
+By setting up a VPC with subnets and an Internet Gateway, you have a flexible and secure environment for deploying AWS resources.
