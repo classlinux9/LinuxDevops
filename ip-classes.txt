@@ -1,0 +1,36 @@
+IPv4 addresses are categorized into five main classes, primarily based on the leading bits and the range of addresses. Here’s an overview:
+
+### Class A
+- **Range**: 1.0.0.0 to 126.0.0.0
+- **Leading Bits**: 0
+- **Default Subnet Mask**: 255.0.0.0 (/8)
+- **Hosts per Network**: Up to 16 million (2^24 - 2 for usable addresses)
+- **Purpose**: Large networks (e.g., large organizations or ISPs)
+  
+### Class B
+- **Range**: 128.0.0.0 to 191.255.0.0
+- **Leading Bits**: 10
+- **Default Subnet Mask**: 255.255.0.0 (/16)
+- **Hosts per Network**: Up to 65,534 (2^16 - 2 for usable addresses)
+- **Purpose**: Medium-sized networks (e.g., universities and corporations)
+
+### Class C
+- **Range**: 192.0.0.0 to 223.255.255.0
+- **Leading Bits**: 110
+- **Default Subnet Mask**: 255.255.255.0 (/24)
+- **Hosts per Network**: Up to 254 (2^8 - 2 for usable addresses)
+- **Purpose**: Small networks (e.g., small businesses)
+
+### Class D
+- **Range**: 224.0.0.0 to 239.255.255.255
+- **Leading Bits**: 1110
+- **Default Subnet Mask**: N/A (reserved for multicast)
+- **Purpose**: Multicasting (e.g., one-to-many communication in streaming or gaming)
+
+### Class E
+- **Range**: 240.0.0.0 to 255.255.255.255
+- **Leading Bits**: 1111
+- **Default Subnet Mask**: N/A (reserved for research and experimental use)
+- **Purpose**: Reserved for future or experimental purposes (not used for normal operations)
+
+These classes help with IP address allocation and routing across various network sizes. Only Classes A, B, and C are commonly used for network hosts, while Classes D and E are reserved for special purposes.
